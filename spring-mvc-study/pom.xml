@@ -3,7 +3,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>itanken-arthur</groupId>
   <artifactId>spring-mvc-study</artifactId>
-  <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>spring-mvc-study Maven Webapp</name>
   <url>http://maven.apache.org</url>
