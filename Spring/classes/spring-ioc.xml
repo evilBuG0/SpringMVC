@@ -5,5 +5,15 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd" >
         
 	<bean id="oneInterface" class="com.imooc.ioc.interfaces.OneInterfaceImpl"></bean>
-	
+	<!--  <bean id ="Car" class="com.imooc.ioc.interfaces.Car" >
+		<property name="type" value="BMW"></property>
+		<property name="factory" value="Shanghai"></property>
+		<property name="price" value="200000"></property>
+		<constructor-arg ></constructor-arg>
+	</bean>-->
+	<bean id ="Car2" class="com.imooc.ioc.interfaces.Car" >
+	<constructor-arg value="Honda"></constructor-arg>
+	<constructor-arg value="Beijing"></constructor-arg>
+	<constructor-arg value="600000"></constructor-arg>
+	</bean>
  </beans>

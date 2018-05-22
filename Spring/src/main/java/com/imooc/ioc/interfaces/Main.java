@@ -10,6 +10,10 @@ public class Main {
 		ApplicationContext ca=new ClassPathXmlApplicationContext("spring-ioc.xml");
 		OneInterfaceImpl oti= (OneInterfaceImpl) ca.getBean("oneInterface");
 		oti.say("20180521");
+		//Car car1=(Car) ca.getBean("Car");
+				//System.out.println(car1);
+		Car car2=(Car) ca.getBean("Car2");
+				System.out.println(car2);
 	}
 
 }
