@@ -5,15 +5,21 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd" >
         
 	<bean id="oneInterface" class="com.imooc.ioc.interfaces.OneInterfaceImpl"></bean>
-	<!--  <bean id ="Car" class="com.imooc.ioc.interfaces.Car" >
-		<property name="type" value="BMW"></property>
+	  <bean id ="Car" class="com.imooc.ioc.interfaces.Car" >
+		<property name="type" >
+		<value><![CDATA[<宝马>]]></value> <!-- CDATA强制转换需要单独的value标签 -->
+		</property>
 		<property name="factory" value="Shanghai"></property>
 		<property name="price" value="200000"></property>
-		<constructor-arg ></constructor-arg>
-	</bean>-->
-	<bean id ="Car2" class="com.imooc.ioc.interfaces.Car" >
-	<constructor-arg value="Honda"></constructor-arg>
+	</bean>
+	<!--<bean id ="Car2" class="com.imooc.ioc.interfaces.Car" >
+	<constructor-arg value="<![CDATA[<宝马>]]>"></constructor-arg>
 	<constructor-arg value="Beijing"></constructor-arg>
 	<constructor-arg value="600000"></constructor-arg>
+	</bean>-->
+	<bean id="Person" class="com.imooc.ioc.interfaces.Person">
+	<property name="name" value="张三"></property>
+	<property name="age" value="24"></property>
+	<property name="car" ref="Car"></property><!-- 也可以用<ref bean="Car"/>来引用 -->
 	</bean>
  </beans>

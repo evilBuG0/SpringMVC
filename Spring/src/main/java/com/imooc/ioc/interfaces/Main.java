@@ -12,8 +12,10 @@ public class Main {
 		oti.say("20180521");
 		//Car car1=(Car) ca.getBean("Car");
 				//System.out.println(car1);
-		Car car2=(Car) ca.getBean("Car2");
+		Car car2=(Car) ca.getBean("Car");
 				System.out.println(car2);
+				Person person1=(Person) ca.getBean("Person");
+				System.out.println(person1);
 	}
-
+		
 }
