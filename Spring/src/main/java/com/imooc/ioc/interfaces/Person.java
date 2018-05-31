@@ -3,7 +3,7 @@ import java.util.*;
 public class Person {
 	private String name;
 	private int age;
-	private List<Car> car;
+	private List<Car> cars;
 	public String getName() {
 		return name;
 	}
@@ -20,17 +20,22 @@ public class Person {
 	
 
 	public List<Car> getCar() {
-		return car;
+		return cars;
 	}
 	public void setCar(List<Car> car) {
-		this.car = car;
+		this.cars = car;
 	}
 	
 	public Person(String name, int age, List<Car> car) {
 		super();
 		this.name = name;
 		this.age = age;
-		this.car = car;
+		this.cars = car;
+	}
+	
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + ", cars=" + cars + "]";
 	}
 	public Person() {}
 }
